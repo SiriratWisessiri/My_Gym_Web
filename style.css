@@ -21,7 +21,8 @@ html {
 }
 
 body{
-    margin: 30px 20px;
+    margin:0;
+    padding: 0;
     line-height: 1.4;
     font-family: 'Quicksand', sans-serif;
 }
@@ -188,6 +189,10 @@ img {
     font-size: larger;
 }
 
+.info img{
+    margin: 2rem auto;
+}
+
 a .btn{
     margin-top: 20rem;
 }
@@ -195,12 +200,14 @@ a .btn{
 .gallery {
     text-align: center;
     font-size: 2rem;
+    
 }
 /* Portfolio */
 .portfolio{
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0rem 1rem;
 }
 
 .portfolio img{
