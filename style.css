@@ -197,12 +197,30 @@ a .btn{
     margin-top: 20rem;
 }
 
+.info li {
+    margin-bottom: 1.5rem;
+}
+/* How to style bullet color */
+.info ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  .info ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--yellow); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+
+/* Portfolio */
 .gallery {
     text-align: center;
     font-size: 2rem;
-    
 }
-/* Portfolio */
+
 .portfolio{
     display: grid;
     grid-gap: 1rem;
